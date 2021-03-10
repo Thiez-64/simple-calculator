@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let userName=prompt("What is your name ?");
+        let firstValue=parseInt(prompt("Please enter a number ?"));
+        let operator=prompt("Please enter a operator (+/*-) ?");
+        let secondValue=parseInt(prompt("Please enter a second number ?"));
+       
+        /*if (operator === '+'){
+            console.log(firstValue+secondValue)
+        }
+        else{
+            console.log(firstValue-secondValue)
+        }*/
+
+        /*switch (operator){
+            case "+":
+            console.log(firstValue+secondValue);
+            break;
+            case "-":
+            console.log(firstValue-secondValue);
+            break;
+            case "/":
+            console.log(firstValue/secondValue);
+            break;
+            case "*":
+            console.log(firstValue*secondValue);
+            break;
+            default :
+            console.log("Invalid operator");
+            break;
+        }*/
+
+        const playerName = prompt("What is your name ?");
+        const random = Math.floor(Math.random() * 100) + 1;
+        console.log(random);
+
+        let gameContinue = true;
+           
+
+        while (gameContinue) {
+            const playerNumber = parseInt(prompt("Pick a number between 0 and 100"), 10);
+            if (playerNumber > random){
+            console.log("It is less");
+            }if (playerNumber < random) {
+            console.log("It is more");
+            
+            }if (playerNumber === random) {
+            alert(`${playerName} wins !`);
+            gameContinue = false;
+            }
+        }
+        
+    
+    </script>
+    
+</body>
+</html>
