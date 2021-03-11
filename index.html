@@ -7,59 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        /*let userName=prompt("What is your name ?");
-        let firstValue=parseInt(prompt("Please enter a number ?"));
-        let operator=prompt("Please enter a operator (+/*-) ?");
-        let secondValue=parseInt(prompt("Please enter a second number ?"));
-       
-        /*if (operator === '+'){
-            console.log(firstValue+secondValue)
-        }
-        else{
-            console.log(firstValue-secondValue)
-        }*/
+    <h1>JS Calculator</h1>
 
-        /*switch (operator){
-            case "+":
-            console.log(firstValue+secondValue);
-            break;
-            case "-":
-            console.log(firstValue-secondValue);
-            break;
-            case "/":
-            console.log(firstValue/secondValue);
-            break;
-            case "*":
-            console.log(firstValue*secondValue);
-            break;
-            default :
-            console.log("Invalid operator");
-            break;
-        }*/
+    <form action="">
+        <label for="userName"></label>
+        <input type="text" name="userName" id="userName">
 
-        const playerName = prompt("What is your name ?");
-        const random = Math.floor(Math.random() * 100) + 1;
-        console.log(random);
-
-        let gameContinue = true;
-           
-
-        while (gameContinue) {
-            const playerNumber = parseInt(prompt("Pick a number between 0 and 100"), 10);
-            if (playerNumber > random){
-            console.log("It is less");
-            }if (playerNumber < random) {
-            console.log("It is more");
-            
-            }if (playerNumber === random) {
-            alert(`${playerName} wins !`);
-            gameContinue = false;
-            }
-        }
+        <label for="firstValue"></label>
+        <input type="text" name="firstValue" id="firstValue">
         
+        <label for="operator">Choose an operator:</label>
+        <select id="operator">
+            <option value="+">add</option>
+            <option value="-">subtrate</option>
+            <option value="/">divide</option>
+            <option value="*">multiplie</option>
+        </select>
+        
+        <label for="secondValue"></label>
+        <input type="text" name="secondValue" id="secondValue">
+        
+        <button id="theButton">Calculate</button>
+        
+        <div>
+            <p id="result"></p>
+        </div>
+    </form>
     
-    </script>
+    <script src="script.js"></script>
     
 </body>
 </html>
