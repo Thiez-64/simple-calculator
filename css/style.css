@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap");
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+h1 {
+  margin: 1em auto;
+}
+div {
+  display: flex;
+}
+p {
+  font-family: "Noto";
+  margin: 0;
+}
+.title {
+  flex-direction: column;
+}
+.title-sub {
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: "Noto+Sans+SC";
+}
+.title-logo-img {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+.img-charactere {
+  margin: 0 auto;
+  width: 100%;
+}
+.charactere {
+  margin: 4vw auto;
+}
+.formulaire {
+  justify-content: center;
+}
+.button {
+  justify-content: center;
+}
+.result {
+  justify-content: center;
+}
+.menu-burger-position {
+  width: 100%;
+  position: absolute;
+  bottom: 20vw;
+}
+.menu-burger{
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  z-index: 100;
+  cursor: pointer;
+  background: radial-gradient(circle at 5vw 5vw, #ff670f, #eba329);
+}
+.menu-burger.etoile::before{
+    content:"★"
+}
+
+
+.nav-barre {
+  background-color: hotpink;
+  height: 0vw;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.translate-menu {
+  height: 15vw;
+}
+.translate-burger {
+  bottom: 20vw;
+}
