@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Thiez-64/simple-calculator/issues"
   },
-  "homepage": "https://github.com/Thiez-64/simple-calculator#readme"
+  "homepage": "https://github.com/Thiez-64/simple-calculator#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
 }
